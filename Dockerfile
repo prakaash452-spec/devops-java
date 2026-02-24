@@ -11,6 +11,7 @@ RUN ./mvnw dependency:go-offline
 
 # Step B: Copy the actual source code and build the "Invisible" JAR
 COPY src ./src
+RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
 # STAGE 2: The Runtime Environment 

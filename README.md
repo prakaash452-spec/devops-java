@@ -7,6 +7,7 @@
 
 # After adding any new package in pom.xml file run following fresh installation. 
 `./mvnw clean install`
+
 `./mvnw clean install -DskipTests`
 
 # Building the application
